@@ -1,0 +1,92 @@
+﻿@using Project1.Models
+@{
+	Layout = "_Layout";
+}
+
+<div class="text-center">
+	<h1>SCOPE INDIA is open 365 days a year</h1>
+	<h3>Let's discuss your career,24/7 free Consultation</h3>
+</div>
+<br />
+<style>
+	.bg {
+		padding: 50px;
+		align-content: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		color: black;
+		background-color: mediumblue;
+	}
+
+	h1 {
+		font-weight: bold;
+		color: darkgoldenrod;
+	}
+
+	h3 {
+		font-weight: bold;
+		color: white;
+	}
+
+	.h2 {
+		color: white;
+	}
+
+	.container {
+		max-width: 700px;
+		margin: auto;
+		padding: 10px;
+	}
+
+	.h1 {
+		color: white;
+	}
+
+	h4 {
+		color: white;
+	}
+
+</style>
+
+@if (ViewBag.Message != null)
+{
+	<div class="alert alert-info">
+		@ViewBag.Message
+	</div>
+}
+<div class="bg">
+	<div class="container mt-1 Login">
+		<div class="card">
+			<div class="card-header bg-primary text-uppercase">
+				<h4>Contact Us</h4>
+			</div>
+			<div class="card-body">
+				<form method="POST" asp-controller="Home" asp-action="Contact">
+					<div class="Form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="name" required />
+					</div>
+					<div class="Form-group">
+						<label for="toEmail">Email</label>
+						<input type="email" class="form-control" id="toEmail" name="toEmail" required />
+					</div>
+					<div class="Form-group">
+						<label for="subject">Subject</label>
+						<input type="text" class="form-control" id="Subject" name="subject" required />
+					</div>
+					<div class="Form-group">
+						<label for="messageBody">Message Body</label>
+						<textarea class="form-control" id="MessageBody" name="messageBody" rows="4" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary"> Send Email</button>
+				</form>
+
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+

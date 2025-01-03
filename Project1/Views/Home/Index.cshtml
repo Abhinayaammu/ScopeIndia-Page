@@ -1,0 +1,151 @@
+﻿@* @model IEnumerable<Project1.Entity.UserAccount>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>User Details</h1>
+<style>
+    h1{
+        color:white;
+    }
+.table{
+    color:white;
+}
+</style>
+
+<p>
+    <a asp-action="Create"></a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateofBirth)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+           @*  <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th> *@
+           @*  <th>
+                @Html.DisplayNameFor(model => model.Phonenumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hobbies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.State)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateofBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td> *@
+           @*  <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td> *@
+           @*  <td>
+                @Html.DisplayFor(modelItem => item.Phonenumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hobbies)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td> *@
+           @*  <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td> *@
+   @*      </tr>
+}
+    </tbody>
+</table> *@
+
+<style>
+    .text-center {
+        padding: 100px;
+        background-color: white;
+    }
+
+    h1 {
+        color: goldenrod;
+    }
+
+    h4 {
+        color: black;
+    }
+
+</style>
+<div class="home-logo">
+    @* <img src="~/images/scope-india-logo-web[1].png" *@
+    <img src="~/images/scope-india-logo-web[1].png" alt="logo" />
+</div>
+<div class="text-center">
+    <img src="~/images/5star.png" style="width:250px;" />
+    @* <img src="~/images/5star.png" style="width:250px;" /> *@
+    <h1>SCOPE INDIA, your career partner!</h1>
+    <h4>
+        One of India's best Training destinations for Software, Networking,
+        <br>and Cloud Computing courses with 17 years of Industrial
+        <br>experience.
+    </h4>
+    <p>
+        Software, Networking, and Cloud Professional Education Centre in Kerala and Tamil Nadu from <strong>Suffix E Solutions</strong> with WORKING <br>PROFESSIONALS oriented on-the-job TRAINING model. SCOPE INDIA provides courses for <strong>Software Programming</strong> in Python (Data Science |<br /> Artificial Intelligence | Machine Learning | Deep Learning, Data Analytics), Java, PHP, .Net, MERN,<strong>Software Testing</strong> Manual and Automation,<br /><strong>Cloud Computing</strong> (AWS | Azure),<strong> Server Administration</strong> (MicroSoft MCSE | Linux RHCE), Networking (CCNA),<strong> DevOps, Mobile App<br />Development</strong> in Flutter, and <strong>Digital Marketing</strong>. A Training with a 100% Trusted Job-Based Internship Model. SCOPE INDIA has a Strong<br />Placement Cell that provides jobs to thousands of students annually. We assure you, you won't regret it after training from SCOPE INDIA!
+
+        <br>This is how SCOPE INDIA can support both newbies and those experienced in the industry to upgrade their skills.
+    </p>
+
+</div>
